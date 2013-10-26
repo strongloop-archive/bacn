@@ -1,0 +1,11 @@
+{
+  "name": "bacn",
+  "version": "0.1.0",
+  "description": "Command-line tools for cooking a stack of Bacn.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Schoonmaker <michael.r.schoonmaker@gmail.com>",
+  "license": "MIT"
+}
