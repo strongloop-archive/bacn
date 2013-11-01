@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+var spawn = require('child_process').spawn;
+var path = require('path');
+var tty = require('tty');
+
+var Paths = {
+  CORDOVA: path.resolve(__dirname, '..', 'node_modules', '.bin', 'cordova')
+};
+
+function spawnTool(name) {
+  return spawn(
+    Paths[name.toUpperCase()],
+    process.argv.slice(2),
+    {
+      env: process.env,
+      cwd: process.cwd(),
+      stdio: 'inherit'
+    }
+  );
+}
+
+spawnTool('cordova')
+  .on('exit', function (code) {
+    process.exit(code);
+  });
