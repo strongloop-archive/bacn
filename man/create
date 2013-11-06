@@ -1,8 +1,8 @@
-Creates a new BACN project.
+Create a new BACN project.
 
 Usage
 
-  create PATH [ID] [NAME]
+  bacn create PATH [ID] [NAME]
 
 Options
 
