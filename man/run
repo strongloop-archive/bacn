@@ -1,0 +1,11 @@
+Run the current Project's client application for the specified PLATFORM.
+If PLATFORM is not specified, all clients are run instead.
+
+Usage
+
+  bacn run [PLATFORM]
+
+Options
+
+  --device    Run the client application(s) on a connected and
+              properly-configured device.

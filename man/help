@@ -20,3 +20,6 @@ These commands should be run within a BACN project directory.
   build [PLATFORM]          Build the current Project's client application for
                             the specified PLATFORM. If PLATFORM is not
                             specified, all platforms are built instead.
+  run [PLATFORM]            Run the current Project's client application for
+                            the specified PLATFORM. If PLATFORM is not
+                            specified, all clients are run instead.
