@@ -1,1 +1,9 @@
-Help for create
+Creates a new BACN project.
+
+Usage
+
+  create PATH [ID] [NAME]
+
+Options
+
+  --no-clients.ios    Disable generating an iOS project.
