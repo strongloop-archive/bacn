@@ -1,0 +1,12 @@
+Command-line tools for cooking a stack of Bacn.
+
+Usage
+
+  cordova command [options]
+
+Commands
+
+  create PATH [ID] [NAME]   Creates a new project named NAME at PATH with
+                            reverse-domain-notation ID as its id for mobile
+                            clients.
+  help                      Show this help text, then exit.

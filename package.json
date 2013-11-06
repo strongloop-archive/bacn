@@ -12,6 +12,8 @@
   "author": "Michael Schoonmaker <michael.r.schoonmaker@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "cordova": "~2.8.25"
+    "cordova": "~2.8.25",
+    "ocl": "~1.0.1",
+    "rc": "~0.3.1"
   }
 }
