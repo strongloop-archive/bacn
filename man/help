@@ -4,9 +4,17 @@ Usage
 
   cordova command [options]
 
-Commands
+Global Commands
+
+These commands can be run anywhere.
 
   create PATH [ID] [NAME]   Creates a new project named NAME at PATH with
                             reverse-domain-notation ID as its id for mobile
                             clients.
   help                      Show this help text, then exit.
+
+Project Commands
+
+These commands should be run within a BACN project directory.
+
+  build                     Builds the client application for all platforms.

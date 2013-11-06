@@ -1,0 +1,5 @@
+Builds the current Project's client applications.
+
+Usage
+
+  bacn build
