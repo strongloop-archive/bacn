@@ -17,4 +17,6 @@ Project Commands
 
 These commands should be run within a BACN project directory.
 
-  build                     Builds the client application for all platforms.
+  build [PLATFORM]          Build the current Project's client application for
+                            the specified PLATFORM. If PLATFORM is not
+                            specified, all platforms are built instead.

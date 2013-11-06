@@ -1,5 +1,6 @@
-Builds the current Project's client applications.
+Build the current Project's client application for the specified PLATFORM.
+If PLATFORM is not specified, all platforms are built instead.
 
 Usage
 
-  bacn build
+  bacn build [PLATFORM]
