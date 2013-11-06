@@ -1,6 +1,6 @@
 {
   "name": "bacn",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Command-line tools for cooking a stack of Bacn.",
   "main": "index.js",
   "bin": {
