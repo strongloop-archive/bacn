@@ -4,5 +4,14 @@ var loader = require('ocl').createLoader({
   root: path.resolve(__dirname, '..', 'lib', 'commands'),
   manuals: path.resolve(__dirname, '..', 'man')
 });
+var when = require('when');
 
-loader.run();
+when(
+  loader.run(),
+  function () {
+    console.log('Finished.');
+  },
+  function (err) {
+    console.log('Error: %s', err.stack || err.message || err);
+  }
+);
