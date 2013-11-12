@@ -4,6 +4,7 @@ html, body {
 }
 
 body {
-  background: #000 url(../logo.png) center center no-repeat;
+  background: #000 url(../logo.png) bottom center no-repeat;
+  padding-top: 60px;
   color: #fff;
 }
