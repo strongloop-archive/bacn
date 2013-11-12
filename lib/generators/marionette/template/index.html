@@ -1,16 +1,30 @@
 <!doctype html>
-<html class="no-js">
+<html>
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title><%= appname %></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <div id="main">
+      <p>BACN loading...</p>
+    </div>
+
+    <script type="text/html" id="example-template">
+      <p class="version">BACN v<%%= version %> loaded.</p>
+    </script>
+
+    <script src="cordova.js"></script>
+    <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/underscore/underscore-min.js"></script>
     <script src="bower_components/backbone/backbone-min.js"></script>
-    <script src="bower_components/marionette/lib/marionette.min.js"></script>
+    <script src="bower_components/marionette/lib/backbone.marionette.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
