@@ -15,4 +15,4 @@ run:
 	cd bacn-test; bacn run
 
 log:
-	cat bacn-test/platforms/ios/cordova/console.log
+	cd bacn-test; bacn log

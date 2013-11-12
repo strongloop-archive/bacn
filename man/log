@@ -1,0 +1,10 @@
+Displays the current log for PLATFORM. If PLATFORM is not specified, all
+platforms' logs are displayed instead.
+
+Usage
+
+  bacn log [OPTIONS] [PLATFORM]
+
+Options
+
+  -f    Same as "tail -f".
