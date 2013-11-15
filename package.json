@@ -19,6 +19,7 @@
     "yeoman-generator": "~0.14.0-rc.2",
     "bower": "~1.2.7",
     "shelljs": "~0.2.6",
-    "slice-file": "~0.2.1"
+    "slice-file": "~0.2.1",
+    "loopback-workspace": "~2.0.0"
   }
 }
