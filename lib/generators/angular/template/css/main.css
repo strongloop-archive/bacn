@@ -1,0 +1,10 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #000 url(../logo.png) bottom right no-repeat;
+  padding-top: 60px;
+  color: #fff;
+}
