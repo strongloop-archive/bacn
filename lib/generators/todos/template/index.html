@@ -9,40 +9,36 @@
     <title><%= appname %></title>
     <meta name="description" content="">
 
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bower_components/topcoat/css/topcoat-mobile-dark.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">
-          <%= appname %>
-        </a>
-      </div>
-    </div>
-
     <div id="main" ng-controller="TodosCtrl">
-      <h1>To-Do</h1>
-      <ul class="list-group">
-        <li class="list-group-item" ng-repeat="(index, name) in items">
-          <div class="btn-group">
-            <a class="btn btn-danger" ng-click="cancel(index)"><span class="glyphicon glyphicon-remove"></span></a>
-            <a class="btn btn-success" ng-click="complete(index)"><span class="glyphicon glyphicon-ok"></span></a>
-          </div>
-          {{name}}
-        </li>
-        <li>
-          <form ng-submit="add()">
-            <div class="input-group">
-              <input type="text" class="form-control" ng-model="name">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-plus"></span></button>
-              </span>
+      <div class="topcoat-list">
+        <h3 class="topcoat-list__header">To-Dos</h3>
+        <ul class="topcoat-list__container">
+          <li class="topcoat-list__item" ng-repeat="(index, name) in items">
+            {{name}}
+            <div class="topcoat-button-bar item-controls">
+              <div class="topcoat-button-bar__item">
+                <button class="topcoat-button-bar__button" ng-click="cancel(index)"><span class="fa fa-times fa-lg"></span></button>
+              </div>
+              <div class="topcoat-button-bar__item">
+                <button class="topcoat-button-bar__button" ng-click="complete(index)"><span class="fa fa-check fa-lg"></span></button>
+              </div>
             </div>
-          </form>
-        </li>
-      </ul>
+          </li>
+          <li class="topcoat-list__item">
+            <form ng-submit="add()">
+              <input type="text" class="topcoat-text-input" ng-model="name">
+              <div class="add-controls">
+                <button type="submit" class="topcoat-button--cta"><span class="fa fa-plus fa-lg"></span></button>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script src="cordova.js"></script>
