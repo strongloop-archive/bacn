@@ -12,6 +12,7 @@ These commands can be run anywhere.
                             reverse-domain-notation ID as its id for mobile
                             clients.
   help                      Show this help text, then exit.
+  version                   Show version information, then exit.
 
 Project Commands
 
@@ -23,3 +24,6 @@ These commands should be run within a BACN project directory.
   run [PLATFORM]            Run the current Project's client application for
                             the specified PLATFORM. If PLATFORM is not
                             specified, all clients are run instead.
+  log [PLATFORM]            Display the current log for PLATFORM. If PLATFORM
+                            is not specified, all platforms' logs are displayed
+                            instead.
