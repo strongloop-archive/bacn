@@ -1,0 +1,10 @@
+Prints version information to stdout, then exits.
+
+Usage
+
+  bacn version
+
+Options
+
+  --short   Prints only the bacn version by itself, with no descriptions or
+            downstream versions.

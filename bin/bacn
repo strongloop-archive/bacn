@@ -8,9 +8,7 @@ var when = require('when');
 
 when(
   loader.run(),
-  function () {
-    console.log('Finished.');
-  },
+  function () {},
   function (err) {
     console.log('Error: %s', err.stack || err.message || err);
   }
