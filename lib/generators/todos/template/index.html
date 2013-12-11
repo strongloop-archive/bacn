@@ -18,8 +18,8 @@
       <div class="topcoat-list">
         <h3 class="topcoat-list__header">To-Dos</h3>
         <ul class="topcoat-list__container">
-          <li class="topcoat-list__item" ng-repeat="(index, name) in items">
-            {{name}}
+          <li class="topcoat-list__item" ng-repeat="(index, todo) in items">
+            {{todo.name}}
             <div class="topcoat-button-bar item-controls">
               <div class="topcoat-button-bar__item">
                 <button class="topcoat-button-bar__button" ng-click="cancel(index)"><span class="fa fa-times fa-lg"></span></button>
@@ -43,6 +43,7 @@
 
     <script src="cordova.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
