@@ -1,0 +1,12 @@
+body {
+  padding-top: 20px;
+}
+
+.item-controls {
+  margin-top: -14px;
+  float: right;
+}
+
+.add-controls {
+  float: right;
+}

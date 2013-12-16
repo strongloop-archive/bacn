@@ -3,7 +3,7 @@
 default: clean create build run log
 
 create:
-	bacn create bacn-test com.strongloop.bacn-test BacnTest --template marionette
+	bacn create bacn-test com.strongloop.bacn-test BacnTest
 
 clean:
 	rm -rf bacn-test
@@ -15,4 +15,4 @@ run:
 	cd bacn-test; bacn run
 
 log:
-	cd bacn-test; bacn log
+	cd bacn-test; bacn log -f
