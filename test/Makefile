@@ -3,7 +3,7 @@
 default: clean create build run log
 
 create:
-	bacn create bacn-test com.strongloop.bacn-test BacnTest
+	bacn create bacn-test com.strongloop.bacn-test BacnTest --template ionic
 
 clean:
 	rm -rf bacn-test
